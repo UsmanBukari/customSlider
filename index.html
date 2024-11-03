@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Slider</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    .section-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2rem;
+      line-height: 40px;
+      color: #000000;
+    }
+
+    .hover-effect:hover .image-container img {
+      transform: scale(1.05);
+    }
+
+    .image-container img {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-effect:hover .arrow-overlay {
+      opacity: 1;
+    }
+
+    .arrow-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: #000;
+      font-size: 2rem;
+    }
+
+    .title-text {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.125rem;
+      color: #000000;
+      margin-left: 16px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="w-full max-w-4xl">
+    <h1 class="text-left font-bold mb-0 ml-6 section-title">Section Title</h1>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="PlaceholderImage.png" target="_blank" class="block p-6 relative hover-effect">
+            <div class="image-container">
+              <img src="PlaceholderImage.png" alt="Placeholder Image" class="w-[396px] h-[485px] object-cover mx-auto">
+              <div class="arrow-overlay">&#8594;</div>
+            </div>
+            <h2 class="mt-4 title-text">Title</h2>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="PlaceholderImage.png" target="_blank" class="block p-6 relative hover-effect">
+            <div class="image-container">
+              <img src="PlaceholderImage.png" alt="Placeholder Image" class="w-[396px] h-[485px] object-cover mx-auto">
+              <div class="arrow-overlay">&#8594;</div>
+            </div>
+            <h2 class="mt-4 title-text">Title</h2>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="PlaceholderImage.png" target="_blank" class="block p-6 relative hover-effect">
+            <div class="image-container">
+              <img src="PlaceholderImage.png" alt="Placeholder Image" class="w-[396px] h-[485px] object-cover mx-auto">
+              <div class="arrow-overlay">&#8594;</div>
+            </div>
+            <h2 class="mt-4 title-text">Title</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
